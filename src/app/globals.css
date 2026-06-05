@@ -1,0 +1,42 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background: #fff8f0;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100svh;
+    overflow-x: hidden;
+    background: #fff8f0;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  h1,
+  h2,
+  h3,
+  .display-heading {
+    font-family: var(--font-doran), var(--font-cairo), system-ui, sans-serif;
+  }
+}
+

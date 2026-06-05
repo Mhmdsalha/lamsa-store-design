@@ -1,0 +1,30 @@
+{
+  "name": "lamsa-beauty-store",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3001",
+    "build": "next build",
+    "start": "next start --port 3001",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "framer-motion": "^12.40.0",
+    "lucide-react": "^0.555.0",
+    "next": "16.2.6",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.10",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "autoprefixer": "^10.4.22",
+    "eslint": "^9.39.1",
+    "eslint-config-next": "16.2.6",
+    "postcss": "^8.5.10",
+    "tailwindcss": "3.4.19",
+    "typescript": "^5.9.3"
+  }
+}
