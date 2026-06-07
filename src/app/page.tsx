@@ -26,7 +26,7 @@ export default function LamsaPage() {
       <PromoBanner />
       <TrustBar />
       <Footer />
-      <div className="fixed bottom-4 left-4 z-30 rounded-full border border-[#E7C9D2] bg-white/90 px-4 py-2 text-xs font-bold text-[#8A7A75] shadow-[0_4px_24px_rgba(180,120,140,0.10)] backdrop-blur">
+      <div className="fixed bottom-4 left-4 z-30 hidden rounded-full border border-[#E7C9D2] bg-white/90 px-4 py-2 text-xs font-bold text-[#8A7A75] shadow-[0_4px_24px_rgba(180,120,140,0.10)] backdrop-blur sm:block">
         معرض أعمال — تصميم تجريبي
       </div>
     </main>

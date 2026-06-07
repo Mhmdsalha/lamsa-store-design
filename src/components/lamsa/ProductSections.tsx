@@ -21,7 +21,7 @@ export function ProductSections() {
           <SectionReveal
             key={section.id}
             id={section.id}
-            className="bg-[#FFF8F0] px-4 py-16 sm:px-6 lg:px-8"
+            className="bg-[#FFF8F0] px-4 py-12 sm:px-6 sm:py-16 lg:px-8"
           >
             <div className="mx-auto max-w-7xl">
               <div className="relative overflow-hidden rounded-[28px] bg-[#2D2D2D] shadow-[0_24px_54px_rgba(180,120,140,0.16)]">
@@ -32,7 +32,7 @@ export function ProductSections() {
                   height={700}
                   placeholder="blur"
                   blurDataURL={blurDataURL}
-                  className="h-[360px] w-full object-cover opacity-75 sm:h-[420px] lg:h-[390px]"
+                  className="h-[260px] w-full object-cover opacity-75 sm:h-[420px] lg:h-[390px]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-l from-[#2D2D2D]/78 via-[#2D2D2D]/34 to-transparent" />
                 <div className="absolute inset-0 flex items-center">
@@ -40,7 +40,7 @@ export function ProductSections() {
                     <p className="mb-3 text-sm font-bold text-[#F3E5D8]">
                       {section.eyebrow}
                     </p>
-                    <h2 className="text-4xl font-extrabold leading-tight sm:text-6xl">
+                    <h2 className="text-3xl font-extrabold leading-tight sm:text-6xl">
                       {section.title}
                     </h2>
                     {showCount ? (

@@ -12,9 +12,9 @@ export function SectionReveal({ children, className = "", id }: SectionRevealPro
   return (
     <motion.section
       id={id}
-      initial={{ opacity: 0, y: 34 }}
+      initial={false}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.22 }}
+      viewport={{ once: true, amount: 0.05 }}
       transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
       className={className}
     >

@@ -13,7 +13,7 @@ const timer = [
 
 export function PromoBanner() {
   return (
-    <SectionReveal id="offers" className="bg-[#FFF8F0] px-4 py-16 sm:px-6 lg:px-8">
+    <SectionReveal id="offers" className="bg-[#FFF8F0] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
       <div className="mx-auto max-w-7xl overflow-hidden rounded-[28px] bg-gradient-to-l from-[#C9748F] via-[#D4AF87] to-[#B98573] px-6 py-10 text-white shadow-[0_24px_54px_rgba(201,116,143,0.25)] sm:px-10 lg:flex lg:items-center lg:justify-between lg:gap-10">
         <div>
           <p className="text-sm font-bold opacity-85">عرض محدود</p>

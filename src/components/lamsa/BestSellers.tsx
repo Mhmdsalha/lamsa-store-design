@@ -8,7 +8,7 @@ export function BestSellers() {
   return (
     <SectionReveal
       id="products"
-      className="bg-[#FFF8F0] px-4 py-20 sm:px-6 lg:px-8"
+      className="bg-[#FFF8F0] px-4 py-12 sm:px-6 sm:py-20 lg:px-8"
     >
       <div className="mx-auto max-w-7xl">
         <div className="mb-10 text-center">

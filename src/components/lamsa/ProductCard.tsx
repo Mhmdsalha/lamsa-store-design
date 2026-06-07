@@ -20,9 +20,9 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
 
   return (
     <motion.article
-      initial={{ opacity: 0, y: 28 }}
+      initial={false}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.18 }}
+      viewport={{ once: true, amount: 0.05 }}
       transition={{ delay: index * 0.05, duration: 0.55 }}
       className="group overflow-hidden rounded-2xl bg-white shadow-[0_4px_24px_rgba(180,120,140,0.10)] transition duration-300 hover:-translate-y-1.5 hover:shadow-[0_24px_46px_rgba(180,120,140,0.18)]"
     >

@@ -44,10 +44,10 @@ export function HeroBanner() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden bg-[#FFF8F0] px-4 pb-8 pt-5 sm:px-6 sm:pt-7 lg:px-8 lg:pb-8 lg:pt-5"
+      className="relative overflow-hidden bg-[#FFF8F0] px-4 pb-4 pt-5 sm:px-6 sm:pt-7 lg:px-8 lg:pb-8 lg:pt-5"
     >
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_24%,rgba(212,175,135,0.22),transparent_30%),radial-gradient(circle_at_86%_12%,rgba(201,116,143,0.18),transparent_28%)]" />
-      <div className="relative mx-auto grid w-full max-w-7xl min-w-0 justify-items-center gap-6 lg:grid-cols-[1fr_0.9fr] lg:items-start">
+      <div className="relative mx-auto grid w-full max-w-7xl min-w-0 justify-items-center gap-4 sm:gap-6 lg:grid-cols-[1fr_0.9fr] lg:items-start">
         <motion.div
           initial={false}
           className="w-full min-w-0 max-w-sm justify-self-center text-center sm:max-w-2xl lg:mt-16 lg:max-w-2xl lg:justify-self-start lg:text-right xl:mt-20"
@@ -56,14 +56,14 @@ export function HeroBanner() {
             <Sparkles className="size-4 text-[#C9748F]" />
             <span className="truncate">عناية مختارة بروح عربية فاخرة</span>
           </div>
-          <h1 className="mx-auto max-w-[11ch] font-[var(--font-doran)] text-[2.65rem] font-extrabold leading-[1.25] text-[#2D2D2D] sm:text-5xl lg:mx-0 lg:max-w-none lg:text-[3.65rem] xl:text-[4.25rem]">
+          <h1 className="mx-auto max-w-[11ch] font-[var(--font-doran)] text-[2.1rem] font-extrabold leading-[1.18] text-[#2D2D2D] sm:text-5xl lg:mx-0 lg:max-w-none lg:text-[3.65rem] xl:text-[4.25rem]">
             اكتشفي جمالك الطبيعي
           </h1>
-          <p className="mx-auto mt-7 max-w-[19rem] text-base leading-7 text-[#8A7A75] [overflow-wrap:anywhere] sm:mt-8 sm:max-w-xl sm:text-xl lg:mx-0">
+          <p className="mx-auto mt-4 max-w-[19rem] text-base leading-7 text-[#8A7A75] [overflow-wrap:anywhere] sm:mt-8 sm:max-w-xl sm:text-xl lg:mx-0">
             تشكيلة فاخرة من أفضل ماركات التجميل العالمية، مصممة كتجربة بورتفوليو
             راقية تعرض متجرًا عربيًا عصريًا بنَفَس بوتيكي هادئ.
           </p>
-          <div className="mt-6 flex flex-col items-center gap-3 sm:flex-row sm:flex-wrap sm:justify-center lg:justify-start">
+          <div className="mt-4 flex flex-col items-center gap-3 sm:mt-6 sm:flex-row sm:flex-wrap sm:justify-center lg:justify-start">
             <motion.a
               whileTap={{ scale: 0.97 }}
               href="#products"
@@ -91,9 +91,9 @@ export function HeroBanner() {
 
         <motion.div
           initial={false}
-          className="relative mx-auto w-full max-w-sm min-w-0 justify-self-center sm:max-w-[410px] lg:w-full lg:max-w-[400px] lg:justify-self-end xl:max-w-[420px]"
+          className="relative mx-auto w-full max-w-[250px] min-w-0 justify-self-center sm:max-w-[410px] lg:w-full lg:max-w-[400px] lg:justify-self-end xl:max-w-[420px]"
         >
-          <div className="relative aspect-[4/5] overflow-hidden rounded-[32px] bg-white shadow-[0_4px_24px_rgba(180,120,140,0.10)]">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-[28px] bg-white shadow-[0_4px_24px_rgba(180,120,140,0.10)] sm:aspect-[4/5] sm:rounded-[32px]">
             <AnimatePresence mode="wait" initial={false}>
               <motion.div
                 key={currentSlide.src}

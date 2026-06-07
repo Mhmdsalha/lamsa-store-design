@@ -11,16 +11,16 @@ const blurDataURL =
 
 export function Categories() {
   return (
-    <SectionReveal className="bg-[#FFF8F0] px-4 py-16 sm:px-6 lg:px-8">
+    <SectionReveal className="bg-[#FFF8F0] px-4 py-6 sm:px-6 sm:py-16 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="grid grid-cols-2 gap-5 md:grid-cols-4 lg:gap-8">
           {categories.map((category, index) => (
             <motion.a
               key={category.label}
               href={`#${category.id}`}
-              initial={{ opacity: 0, y: 24 }}
+              initial={false}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.05 }}
               transition={{ delay: index * 0.1, duration: 0.55 }}
               className="group text-center"
             >
