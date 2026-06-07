@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ShoppingBag, Star } from "lucide-react";
+import { ArrowLeft, ShoppingBag, Star } from "lucide-react";
 import { motion } from "framer-motion";
 
 import type { LamsaProduct } from "@/data/lamsa-mock";
@@ -67,12 +67,13 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
             {product.originalPrice} ر.س
           </span>
         </div>
-        <div className="mt-4 grid grid-cols-[1fr_auto] gap-2">
+        <div className="mt-4 grid grid-cols-[minmax(0,1fr)_auto] gap-2">
           <Link
             href={productHref}
-            className="inline-flex items-center justify-center rounded-full border border-[#E7C9D2] px-3 py-3 text-sm font-bold text-[#2D2D2D] transition hover:border-[#C9748F] hover:text-[#C9748F]"
+            className="inline-flex min-h-12 min-w-0 items-center justify-center gap-2 rounded-full border border-[#E7C9D2] bg-[#FFF8F0] px-3 text-xs font-extrabold text-[#2D2D2D] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.72)] transition hover:border-[#C9748F] hover:bg-white hover:text-[#C9748F] sm:px-4 sm:text-sm"
           >
             عرض المنتج
+            <ArrowLeft className="size-4 shrink-0" />
           </Link>
           <motion.button
             whileTap={{ scale: 0.97 }}

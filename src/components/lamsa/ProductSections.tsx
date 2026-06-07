@@ -24,7 +24,7 @@ export function ProductSections() {
             className="bg-[#FFF8F0] px-4 py-12 sm:px-6 sm:py-16 lg:px-8"
           >
             <div className="mx-auto max-w-7xl">
-              <div className="relative overflow-hidden rounded-[28px] bg-[#2D2D2D] shadow-[0_24px_54px_rgba(180,120,140,0.16)]">
+              <div className="relative min-h-[340px] overflow-hidden rounded-[28px] bg-[#2D2D2D] shadow-[0_24px_54px_rgba(180,120,140,0.16)] sm:min-h-0">
                 <Image
                   src={section.bannerImage}
                   alt={section.imageAlt}
@@ -32,29 +32,29 @@ export function ProductSections() {
                   height={700}
                   placeholder="blur"
                   blurDataURL={blurDataURL}
-                  className="h-[260px] w-full object-cover opacity-75 sm:h-[420px] lg:h-[390px]"
+                  className="absolute inset-0 h-full w-full object-cover opacity-75 sm:relative sm:h-[420px] lg:h-[390px]"
                 />
-                <div className="absolute inset-0 bg-gradient-to-l from-[#2D2D2D]/78 via-[#2D2D2D]/34 to-transparent" />
-                <div className="absolute inset-0 flex items-center">
-                  <div className="max-w-xl px-6 text-white sm:px-10 lg:px-14">
-                    <p className="mb-3 text-sm font-bold text-[#F3E5D8]">
+                <div className="absolute inset-0 bg-gradient-to-t from-[#2D2D2D]/88 via-[#2D2D2D]/48 to-[#2D2D2D]/16 sm:bg-gradient-to-l sm:from-[#2D2D2D]/78 sm:via-[#2D2D2D]/34 sm:to-transparent" />
+                <div className="absolute inset-0 flex items-end sm:items-center">
+                  <div className="w-full max-w-xl px-5 py-6 text-white sm:px-10 sm:py-0 lg:px-14">
+                    <p className="mb-2 text-xs font-bold text-[#F3E5D8] sm:mb-3 sm:text-sm">
                       {section.eyebrow}
                     </p>
-                    <h2 className="text-3xl font-extrabold leading-tight sm:text-6xl">
+                    <h2 className="text-2xl font-extrabold leading-tight sm:text-6xl">
                       {section.title}
                     </h2>
                     {showCount ? (
-                      <span className="mt-4 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/16 px-4 py-2 text-sm font-bold text-white backdrop-blur">
+                      <span className="mt-3 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/16 px-3 py-1.5 text-xs font-bold text-white backdrop-blur sm:mt-4 sm:px-4 sm:py-2 sm:text-sm">
                         <Package className="size-4" />
                         {sectionProducts.length} منتجات
                       </span>
                     ) : null}
-                    <p className="mt-5 max-w-lg text-base leading-8 text-white/82">
+                    <p className="mt-3 max-w-lg text-sm leading-6 text-white/86 sm:mt-5 sm:text-base sm:leading-8">
                       {section.description}
                     </p>
                     <a
                       href={`#${section.id}-products`}
-                      className="mt-7 inline-flex items-center gap-3 rounded-full bg-white px-6 py-3 text-sm font-bold text-[#2D2D2D] transition hover:-translate-y-0.5 hover:text-[#C9748F]"
+                      className="mt-4 inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-bold text-[#2D2D2D] transition hover:-translate-y-0.5 hover:text-[#C9748F] sm:mt-7 sm:gap-3 sm:px-6 sm:py-3"
                     >
                       {section.cta}
                       <ArrowLeft className="size-4" />
